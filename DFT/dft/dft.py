@@ -1,6 +1,7 @@
 import matplotlib.image as mpimg
 import numpy as np
-from scipy import misc as spm
+import PIL 
+from PIL import Image
 
 from dft import aaa, dct
 
@@ -67,7 +68,7 @@ def to_image(in_path, out_path):
         cg = dct.idct2(image[..., 1])
         cb = dct.idct2(image[..., 2])
         s = np.dstack([cr, cg, cb])
-    spm.imsave(out_path, s)
+    Image.save(out_path, s)
 
 
 def calc_magnitude(image):
