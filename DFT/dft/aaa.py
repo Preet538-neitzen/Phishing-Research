@@ -1,7 +1,7 @@
 import numpy as np
 import struct
 
-
+## Update dump function
 def dump(object_, file_):
     # No need to check file_.mode, writing binary data will fail on .write()
     serializer = AAASerializer(object_)
