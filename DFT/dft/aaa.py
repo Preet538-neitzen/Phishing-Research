@@ -47,7 +47,7 @@ class AAASerializer:
         For each 1 on the last 3 bits an additional color entry follows:
         <value of real component (size as specified in header)>
     """
-
+    ## Rewrite datatypes
     __DATATYPES = ((8, 'b'), (16, 'h'), (32, 'i'))
     _dt_type = '<B'
 
