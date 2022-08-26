@@ -14,7 +14,7 @@ def load(file_):
     deserializer = AAADeserializer(file_)
     return deserializer.deserialize()
 
-
+# Updated class
 class AAASerializer:
     """
     Class for serialization of a numpy array into a bit representation.
